@@ -16,14 +16,14 @@ function whileLoop(n) {
 }
 
 function maybeTrue() {
-  return Math.random() >= 0.5
+  return Math.random() >= 0.5;
 }
 function doWhileLoop(array) {
   do {
-    maybeTrue() && array.length > 0
-} while (array.length > 0)
+    array.pop();
+} while (maybeTrue() && array.length > 0);
 
-  return array
+  return array;
 } 
 
 
